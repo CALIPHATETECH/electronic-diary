@@ -65,6 +65,13 @@
             <x-jet-input id="email" type="email" class="mt-1 block w-full" wire:model.defer="state.email" />
             <x-jet-input-error for="email" class="mt-2" />
         </div>
+
+        <!-- about me -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="email" value="{{ __('About Me') }}" />
+            <textarea id="email" type="email" class="mt-1 block w-full" wire:model.defer="state.about" /></textarea>
+            <x-jet-input-error for="email" class="mt-2" />
+        </div>
     </x-slot>
 
     <x-slot name="actions">

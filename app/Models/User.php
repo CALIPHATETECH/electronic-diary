@@ -27,6 +27,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'about',
     ];
 
     /**
@@ -58,4 +59,18 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function currentMonth()
+    {
+       return Month::firstOrCreate(['name'=>date('M')]);
+    }
+    public function currentYear()
+    {
+       return Year::firstOrCreate(['name'=>date('Y')]);
+    }
+
+    public function userMonthlyDiaries()
+    {
+       return $this->hasMany(UserMonthlyDiary::class);
+    }
 }

@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+
+Route::name('diary.record.')->middleware(['auth:sanctum', 'verified'])
+->prefix('/diary/record')
+->group(function (){
+    Route::get('/create', 'DiaryController@newRecord')->name('create');
+    Route::Post('/register', 'DiaryController@register')->name('register');
+});

@@ -12,31 +12,31 @@
     <meta name="author" content="tabthemes">
     
     <!-- Favicons -->
-    <link rel="shortcut icon" href="img/favicon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="{{asset('img/favicon.png')}}">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{asset('img/apple-touch-icon-57x57.png')}}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{asset('img/apple-touch-icon-72x72.png')}}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{asset('img/apple-touch-icon-114x114.png')}}">
     
     <!-- Google Web Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" />
     
     <!-- Bootstrap CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="{{asset('bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" />
     
     <!-- CSS Files For Plugin -->
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/font-awesome/font-awesome.min.css" rel="stylesheet">
-    <link href="css/magnific-popup.css" rel="stylesheet" />
-    <link href="css/YTPlayer.css" rel="stylesheet" />
-    <link href="inc/owlcarousel/css/owl.carousel.min.css" rel="stylesheet" />
-    <link href="inc/owlcarousel/css/owl.theme.default.min.css" rel="stylesheet" />
-    <link href="inc/revolution/css/settings.css" rel="stylesheet" />
-    <link href="inc/revolution/css/layers.css" rel="stylesheet" />
-    <link href="inc/revolution/css/navigation.css" rel="stylesheet" />
+    <link href="{{asset('css/animate.css')}}" rel="stylesheet">
+    <link href="{{asset('css/font-awesome/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/magnific-popup.css')}}" rel="stylesheet" />
+    <link href="{{asset('css/YTPlayer.css')}}" rel="stylesheet" />
+    <link href="{{asset('inc/owlcarousel/css/owl.carousel.min.css')}}" rel="stylesheet" />
+    <link href="{{asset('inc/owlcarousel/css/owl.theme.default.min.css')}}" rel="stylesheet" />
+    <link href="{{asset('inc/revolution/css/settings.css')}}" rel="stylesheet" />
+    <link href="{{asset('inc/revolution/css/layers.css')}}" rel="stylesheet" />
+    <link href="{{asset('inc/revolution/css/navigation.css')}}" rel="stylesheet" />
     
     <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="{{asset('css/style.css')}}" rel="stylesheet">
     
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -92,7 +92,7 @@
                                         @else
                                             <li><a href="{{ route('login') }}" >Log in</a></li>
                                             @if (Route::has('register'))
-                                                <li><a data-scroll href="{{ route('register') }}">Register</a></li>
+                                                <li><a href="{{ route('register') }}">Register</a></li>
                                             @endif
                                         @endauth
                                     @endif
@@ -773,43 +773,43 @@
 
     
     <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
+    <script src="{{asset('js/jquery.min.js')}}"></script>
     
     <!-- Bootstrap -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
     
     <!-- Components Plugin -->
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/smooth-scroll.js"></script>
-    <script src="js/jquery.appear.js"></script>
-    <script src="js/jquery.countTo.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/jquery.mb.YTPlayer.js"></script>
-    <script src="js/retina.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="inc/owlcarousel/js/owl.carousel.min.js"></script>
-    <script src="inc/revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script src="inc/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="{{asset('js/jquery.easing.1.3.js')}}"></script>
+    <script src="{{asset('js/smooth-scroll.js')}}"></script>
+    <script src="{{asset('js/jquery.appear.js')}}"></script>
+    <script src="{{asset('js/jquery.countTo.js')}}"></script>
+    <script src="{{asset('js/jquery.stellar.min.js')}}"></script>
+    <script src="{{asset('js/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{asset('js/imagesloaded.pkgd.min.js')}}"></script>
+    <script src="{{asset('js/isotope.pkgd.min.js')}}"></script>
+    <script src="{{asset('js/jquery.mb.YTPlayer.js')}}"></script>
+    <script src="{{asset('js/retina.min.js')}}"></script>
+    <script src="{{asset('js/wow.min.js')}}"></script>
+    <script src="{{asset('inc/owlcarousel/js/owl.carousel.min.js')}}"></script>
+    <script src="{{asset('inc/revolution/js/jquery.themepunch.tools.min.js')}}"></script>
+    <script src="{{asset('inc/revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
 
     <!-- Contact Form -->
-    <script src="js/contact.js"></script>
+    <script src="{{asset('js/contact.js')}}"></script>
     
     <!-- Custom Plugin -->
-    <script src="js/custom.js"></script>
+    <script src="{{asset('js/custom.js')}}"></script>
 
     <!-- RS Plugin Extensions -->
-    <script src="inc/revolution/js/extensions/revolution.extension.video.min.js"></script>
-    <script src="inc/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-    <script src="inc/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script src="inc/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-    <script src="inc/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script src="inc/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="inc/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="inc/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-    <script src="inc/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="{{asset('inc/revolution/js/extensions/revolution.extension.video.min.js')}}"></script>
+    <script src="{{asset('inc/revolution/js/extensions/revolution.extension.carousel.min.js')}}"></script>
+    <script src="{{asset('inc/revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
+    <script src="{{asset('inc/revolution/js/extensions/revolution.extension.actions.min.js')}}"></script>
+    <script src="{{asset('inc/revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
+    <script src="{{asset('inc/revolution/js/extensions/revolution.extension.kenburn.min.js')}}"></script>
+    <script src="{{asset('inc/revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
+    <script src="{{asset('inc/revolution/js/extensions/revolution.extension.migration.min.js')}}"></script>
+    <script src="{{asset('inc/revolution/js/extensions/revolution.extension.parallax.min.js')}}"></script>
 
 
     <script>
